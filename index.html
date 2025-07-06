@@ -7,15 +7,17 @@
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="manifest.json" />
     <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js");
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
       }
+
+      // Delay redirect for 1 second
+      setTimeout(() => {
+        window.location.href = "https://karostream.ca/player/tv?channelId=20000127&categoryId=90000021&channelNumber=64";
+      }, 1000); // 1000 ms = 1 second
     </script>
   </head>
   <body>
-    <script>
-      // Redirect to KaroStream player
-      window.location.href = "https://karostream.ca/player/tv?channelId=20000127&categoryId=90000021&channelNumber=64";
-    </script>
+    <p style="color:white; text-align:center; margin-top:50vh;">Loading PTC Punjabi…</p>
   </body>
 </html>
